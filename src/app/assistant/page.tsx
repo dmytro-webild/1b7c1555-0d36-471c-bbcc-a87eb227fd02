@@ -7,13 +7,13 @@ import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis'
 import { Sparkles } from "lucide-react";
 
 const commonNavItems = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/#about" },
-  { name: "Entertainment", href: "/#features" },
-  { name: "Performers", href: "/#performers" },
-  { name: "VIP", href: "/#pricing" },
-  { name: "AI Assistant", href: "/assistant" },
-  { name: "Contact", href: "/#contact" }
+  { name: "Home", id: "/" },
+  { name: "About", id: "/#about" },
+  { name: "Entertainment", id: "/#features" },
+  { name: "Performers", id: "/#performers" },
+  { name: "VIP", id: "/#pricing" },
+  { name: "AI Assistant", id: "/assistant" },
+  { name: "Contact", id: "/#contact" }
 ];
 
 const commonFooterColumns = [
@@ -69,8 +69,6 @@ export default function AssistantPage() {
           mediaAnimation="none"
           imageSrc="http://img.b2bpic.net/free-photo/view-futuristic-urban-city_23-2150935573.jpg"
           imageAlt="AI assistant interface"
-          tag="AI Powered Help"
-          tagIcon={Sparkles}
         />
       </div>
 
