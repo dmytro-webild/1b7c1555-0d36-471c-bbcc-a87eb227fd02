@@ -15,13 +15,13 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import { Key, GlassWater, Sparkles, Crown, Gem, Diamond } from "lucide-react";
 
 const commonNavItems = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/#about" },
-  { name: "Entertainment", href: "/#features" },
-  { name: "Performers", href: "/#performers" },
-  { name: "VIP", href: "/#pricing" },
-  { name: "AI Assistant", href: "/assistant" },
-  { name: "Contact", href: "/#contact" }
+  { name: "Home", id: "/" },
+  { name: "About", id: "/#about" },
+  { name: "Entertainment", id: "/#features" },
+  { name: "Performers", id: "/#performers" },
+  { name: "VIP", id: "/#pricing" },
+  { name: "AI Assistant", id: "/assistant" },
+  { name: "Contact", id: "/#contact" }
 ];
 
 const commonFooterColumns = [
