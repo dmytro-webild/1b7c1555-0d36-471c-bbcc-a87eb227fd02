@@ -14,6 +14,22 @@ import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis'
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import { Key, GlassWater, Sparkles, Crown, Gem, Diamond } from "lucide-react";
 
+const commonNavItems = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/#about" },
+  { name: "Entertainment", href: "/#features" },
+  { name: "Performers", href: "/#performers" },
+  { name: "VIP", href: "/#pricing" },
+  { name: "AI Assistant", href: "/assistant" },
+  { name: "Contact", href: "/#contact" }
+];
+
+const commonFooterColumns = [
+  { items: [{ label: "Home", href: "/" }, { label: "About Us", href: "/#about" }, { label: "Entertainment", href: "/#features" }] },
+  { items: [{ label: "Performers", href: "/#performers" }, { label: "VIP Packages", href: "/#pricing" }, { label: "AI Assistant", href: "/assistant" }, { label: "Contact", href: "/#contact" }] },
+  { items: [{ label: "FAQ", href: "/#faq" }, { label: "Privacy Policy", href: "#" }, { label: "Terms of Service", href: "#" }] }
+];
+
 export default function LandingPage() {
   return (
     <ThemeProvider
@@ -31,18 +47,11 @@ export default function LandingPage() {
       <div id="nav" data-section="nav" className="mx-auto px-4 md:px-6">
         <NavbarLayoutFloatingInline
           brandName="AIRSTRIP"
-          navItems={[
-            { name: "Home", id: "#hero" },
-            { name: "About", id: "#about" },
-            { name: "Entertainment", id: "#features" },
-            { name: "Performers", id: "#performers" },
-            { name: "VIP", id: "#pricing" },
-            { name: "Contact", id: "#contact" }
-          ]}
+          navItems={commonNavItems}
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=lm5gbj"
           logoAlt="Airstrip Gentlemen's Club Logo"
           button={{
-            text: "Book a Table",            href: "#contact"
+            text: "Book a Table",            href: "/#contact"
           }}
         />
       </div>
@@ -55,8 +64,8 @@ export default function LandingPage() {
           }}
           tag="Premier Entertainment"
           buttons={[
-            { text: "View Performers", href: "#performers" },
-            { text: "Book VIP", href: "#contact" }
+            { text: "View Performers", href: "/#performers" },
+            { text: "Book VIP", href: "/#contact" }
           ]}
           imageSrc="http://img.b2bpic.net/free-photo/people-enjoying-their-time-dj-party_23-2149658376.jpg"
           imageAlt="Luxurious interior of Airstrip Gentlemen's Club"
@@ -230,11 +239,7 @@ export default function LandingPage() {
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=lm5gbj"
           logoAlt="Airstrip Gentlemen's Club Logo"
           logoText="Experience Luxury, Indulge in Entertainment. © 2024 Airstrip Gentlemen's Club. All rights reserved."
-          columns={[
-            { items: [{ label: "Home", href: "#hero" }, { label: "About Us", href: "#about" }, { label: "Entertainment", href: "#features" }] },
-            { items: [{ label: "Performers", href: "#performers" }, { label: "VIP Packages", href: "#pricing" }, { label: "Contact", href: "#contact" }] },
-            { items: [{ label: "FAQ", href: "#faq" }, { label: "Privacy Policy", href: "#" }, { label: "Terms of Service", href: "#" }] }
-          ]}
+          columns={commonFooterColumns}
         />
       </div>
     </ThemeProvider>
