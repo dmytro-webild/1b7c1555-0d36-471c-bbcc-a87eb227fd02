@@ -63,7 +63,6 @@ export default function LandingPage() {
           mediaAnimation="slide-up"
           tagAnimation="slide-up"
           buttonAnimation="slide-up"
-          useInvertedBackground={false}
         />
       </div>
       <div id="about" data-section="about" className="mx-auto px-4 md:px-6">
@@ -236,7 +235,6 @@ export default function LandingPage() {
             { items: [{ label: "Performers", href: "#performers" }, { label: "VIP Packages", href: "#pricing" }, { label: "Contact", href: "#contact" }] },
             { items: [{ label: "FAQ", href: "#faq" }, { label: "Privacy Policy", href: "#" }, { label: "Terms of Service", href: "#" }] }
           ]}
-          useInvertedBackground={false}
         />
       </div>
     </ThemeProvider>
